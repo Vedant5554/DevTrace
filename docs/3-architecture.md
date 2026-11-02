@@ -39,7 +39,7 @@ Dependencies flow strictly downward (higher layers import lower layers, never th
 1. **`pages/`** (`.jsx`)  -  Section hubs (`/visualize/:section`) and algorithm detail pages (`/visualize/:section/:algorithm`).
 2. **`components/`** (`.jsx`)  -  Shared UI components: Navigation topbar, Breadcrumbs, 3-column card grid, Comparison tables, Article renderer, Code tabs.
 3. **`canvases/`** (`.jsx`)  -  Visualization renderers per representation (`BarsCanvas`, `TreeCanvas`, `GraphCanvas`).
-4. **`core/`** (`.js`)  -  Player reducer, ticker hook, step event structures, URL state synchronization, audio synthesis, and algorithm registry.
+4. **`core/`** (`.js`)  -  Player reducer, ticker hook, step event structures, URL state synchronization, and algorithm registry.
 5. **`algorithms/`** (`.js`)  -  Pure JavaScript generators organized by section (`sorting/`, `data-structures/`, `graphs/`, `searching/`, `concepts/`). **Strictly zero React, zero DOM, and zero CSS imports.**
 6. **`content/`** (`.js`)  -  Freshly authored article text, complexity tables, worked traces, when-to-use matrices, and 5-language code implementations.
 
@@ -52,7 +52,7 @@ devtrace/
 └── frontend/
     ├── src/
     │   ├── app/                         # App entry, router configuration, routes
-    │   ├── core/                        # Player engine, registry, audio, hooks
+    │   ├── core/                        # Player engine, registry, hooks
     │   │   ├── player.js                # Pure reducer for player actions
     │   │   ├── useTicker.js             # Precision timer hook
     │   │   ├── events.js                # Step event helpers and constants
@@ -204,6 +204,5 @@ Canvases are pure React components taking `({ currentStep, delayMs })`. They con
 | ADR 1 | Pre-recorded step event traces | Live generator stepped on tick | Pre-recording makes backward stepping and exact URL seeking trivial without requiring complex undo reversibility logic. |
 | ADR 2 | Pure `useReducer` + ref ticker | Redux Toolkit, XState | The player state machine consists of 4 primitive fields; an external state library adds unnecessary bundle overhead and review surface. |
 | ADR 3 | Zero-backend static hosting | Node/Express or Spring Boot backend | Static SPA eliminates server hosting cost, cold starts, and network points of failure; all content and logic run client-side. |
-| ADR 4 | Web Audio API oscillator synthesis | Howler.js, audio sample files | Native browser synthesis requires no audio asset downloads, has zero network latency, and enables continuous pitch modulation. |
-| ADR 5 | Strict dark theme only | Theme toggler, light/dark duality | Eliminates CSS token duplication, avoids contrast regressions, and aligns directly with developer-focused reference look. |
-| ADR 6 | Pure JavaScript (no TypeScript) | TypeScript | Simplifies development workflow, removes compilation step hurdles, enables clean modern ES2022+ syntax, and speeds up authoring across 27 algorithms. |
+| ADR 4 | Editorial light theme | Theme toggler, light/dark duality | Eliminates CSS token duplication, avoids contrast regressions, and aligns directly with reference paper aesthetics. |
+| ADR 5 | Pure JavaScript (no TypeScript) | TypeScript | Simplifies development workflow, removes compilation step hurdles, enables clean modern ES2022+ syntax, and speeds up authoring across 27 algorithms. |

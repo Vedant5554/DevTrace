@@ -135,14 +135,7 @@ All three URL parameters are read on page mount and updated upon user selection,
 - **Colors:** Handled via CSS `transition: background-color 100ms linear` (avoids string interpolation issues with CSS variables).
 - **Reduced Motion:** If `prefers-reduced-motion: reduce` is detected, all transitions are instant (`0 ms`) and scaling effects are disabled.
 
-## 8. Audio sonification (optional toggle)
-
-- Clean Web Audio API synthesis (sine oscillator with 90 ms envelope: 5 ms attack, 85 ms release).
-- Frequency mapped to element value: `220 * 2^((value / maxValue) * 2)` Hz.
-- Distinct audio chimes for comparison (soft), swap (accentuated + octave blip), and completion (harmonic arpeggio).
-- Default: Muted until explicitly enabled by user.
-
-## 9. Accessibility & keyboard navigation
+## 8. Accessibility & keyboard navigation
 
 - **Keyboard shortcuts:**
   - `Space`: Play / Pause toggle
