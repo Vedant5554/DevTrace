@@ -1,0 +1,26 @@
+:root {
+  /* Warm editorial light theme (Vox / Linear paper style) */
+  --bg-0: #eceae5;        /* Warm alabaster canvas backdrop */
+  --bg-1: #f7f6f2;        /* Pure warm porcelain card surface */
+  --bg-2: #e3dfd7;        /* Subtle secondary container / input surface */
+  --border: #d5d0c5;      /* Crisp muted border */
+  --border-hover: #171717;/* Solid dark border on focus */
+  
+  /* Text tokens - deep high contrast */
+  --text-0: #141413;      /* Deep obsidian ink for headings and active values */
+  --text-1: #4a4742;      /* Warm graphite body text */
+  --text-muted: #7d776e;  /* Subtitles, secondary notes, captions */
+  
+  /* Accent: Coral / Persimmon Orange from the screenshot ("Start Creating Free" CTA) */
+  --accent: #f2552c;      /* Primary persimmon CTA */
+  --accent-hover: #d9441d;
+  --accent-subtle: #fbeee8;
+  
+  /* Algorithm Visualizer States (no glow, crisp editorial contrast) */
+  --idle: #d8d3c7;        /* Neutral unvisited */
+  --compare: #d97706;     /* Gold / amber check */
+  --swap: #dc2626;        /* Crimson swap / relax */
+  --pivot: #2563eb;       /* Royal blue pivot / window */
+  --range: #e2ded5;       /* Range highlight */
+  --done: #15803d;        /* Deep forest green for sorted / visited */
+}
