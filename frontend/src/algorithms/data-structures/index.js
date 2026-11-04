@@ -1,0 +1,9 @@
+export { binaryTree } from './trees/binaryTree.js';
+export { bst } from './trees/bst.js';
+export { avlTree } from './trees/avlTree.js';
+export { heap } from './trees/heap.js';
+export { trie } from './trees/trie.js';
+export { linkedList } from './linkedList.js';
+export { doublyLinkedList } from './doublyLinkedList.js';
+export { hashTable } from './hashTable.js';
+export { hashMap } from './hashMap.js';
