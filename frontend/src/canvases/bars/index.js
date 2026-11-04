@@ -1,0 +1,1 @@
+export { BarsCanvas, BarsCanvasLegend } from './BarsCanvas.jsx';
