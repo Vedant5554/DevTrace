@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-DevTrace is a static, browser-based algorithm visualizer catalog inspired by Coddy's visualizer architecture (`coddy.tech/visualize`). It provides 27 step-by-step algorithm and data structure visualizer pages organized across 5 distinct sections (Sorting, Data Structures, Graphs, Searching, Concepts). Each algorithm pairs an interactive player on top with a detailed, freshly authored reference article below. There is no backend; all pages are static and identical for every visitor.
+DevTrace is a static, browser-based algorithm visualizer and learning platform. It provides 27 step-by-step algorithm and data structure visualizer pages organized across 5 distinct sections (Sorting, Data Structures, Graphs, Searching, Concepts). Each algorithm pairs an interactive player on top with a detailed, freshly authored reference article below. There is no backend; all pages are static and identical for every visitor.
 
 ## 2. Problem statement
 
