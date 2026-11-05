@@ -53,6 +53,37 @@ const ALGORITHM_GENERATORS = {
   'recursion': () => import('../algorithms/concepts/recursion.js').then(m => m.recursion),
 };
 
+const ALGORITHM_ARTICLES = {
+  'bubble-sort': () => import('../content/sorting/bubbleSort.js').then(m => m.bubbleSortArticle),
+  'selection-sort': () => import('../content/sorting/selectionSort.js').then(m => m.selectionSortArticle),
+  'insertion-sort': () => import('../content/sorting/insertionSort.js').then(m => m.insertionSortArticle),
+  'merge-sort': () => import('../content/sorting/mergeSort.js').then(m => m.mergeSortArticle),
+  'quick-sort': () => import('../content/sorting/quickSort.js').then(m => m.quickSortArticle),
+  'heap-sort': () => import('../content/sorting/heapSort.js').then(m => m.heapSortArticle),
+  'radix-sort': () => import('../content/sorting/radixSort.js').then(m => m.radixSortArticle),
+  'counting-sort': () => import('../content/sorting/countingSort.js').then(m => m.countingSortArticle),
+  'linear-search': () => import('../content/searching/linearSearch.js').then(m => m.linearSearchArticle),
+  'binary-search': () => import('../content/searching/binarySearch.js').then(m => m.binarySearchArticle),
+  'recursion': () => import('../content/concepts/recursion.js').then(m => m.recursionArticle),
+  'dfs': () => import('../content/graphs/dfs.js').then(m => m.dfsArticle),
+  'bfs': () => import('../content/graphs/bfs.js').then(m => m.bfsArticle),
+  'topological-sort': () => import('../content/graphs/topologicalSort.js').then(m => m.topologicalSortArticle),
+  'dijkstra': () => import('../content/graphs/dijkstra.js').then(m => m.dijkstraArticle),
+  'bellman-ford': () => import('../content/graphs/bellmanFord.js').then(m => m.bellmanFordArticle),
+  'kruskal': () => import('../content/graphs/kruskal.js').then(m => m.kruskalArticle),
+  'prim': () => import('../content/graphs/prim.js').then(m => m.primArticle),
+  'stack': () => import('../content/data-structures/stack.js').then(m => m.stackArticle),
+  'queue': () => import('../content/data-structures/queue.js').then(m => m.queueArticle),
+  'linked-list': () => import('../content/data-structures/linkedList.js').then(m => m.linkedListArticle),
+  'doubly-linked-list': () => import('../content/data-structures/doublyLinkedList.js').then(m => m.doublyLinkedListArticle),
+  'hash-table': () => import('../content/data-structures/hashTable.js').then(m => m.hashTableArticle),
+  'hash-map': () => import('../content/data-structures/hashMap.js').then(m => m.hashMapArticle),
+  'binary-tree': () => import('../content/data-structures/trees/binaryTree.js').then(m => m.binaryTreeArticle),
+  'bst': () => import('../content/data-structures/trees/bst.js').then(m => m.bstArticle),
+  'avl-tree': () => import('../content/data-structures/trees/avlTree.js').then(m => m.avlTreeArticle),
+  'heap': () => import('../content/data-structures/trees/heap.js').then(m => m.heapArticle),
+  'trie': () => import('../content/data-structures/trees/trie.js').then(m => m.trieArticle),
+};
 
 const VIEW_MODES = {
   sorting: 'bars',
