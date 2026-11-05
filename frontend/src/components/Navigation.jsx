@@ -82,8 +82,8 @@ export function Navigation() {
               key={section.id}
               to={`/visualize/${section.id}`}
               className={`px-3 py-1.5 text-xs font-semibold tracking-wider uppercase font-sans rounded-md transition-colors ${isActive
-                  ? 'text-[var(--text-0)] bg-[var(--bg-2)]'
-                  : 'text-[var(--text-1)] hover:text-[var(--text-0)] hover:bg-[var(--bg-2)]/60'
+                ? 'text-[var(--text-0)] bg-[var(--bg-2)]'
+                : 'text-[var(--text-1)] hover:text-[var(--text-0)] hover:bg-[var(--bg-2)]/60'
                 }`}
             >
               {section.name}
@@ -130,7 +130,7 @@ export function Navigation() {
           )}
         </div>
         <a
-          href="https://github.com"
+          href="https://github.com/Vedant5554/DevTrace.git"
           target="_blank"
           rel="noopener noreferrer"
           className="p-1.5 text-[var(--text-1)] hover:text-[var(--accent)] transition-colors"
@@ -148,8 +148,8 @@ export function Navigation() {
                 key={section.id}
                 to={`/visualize/${section.id}`}
                 className={`px-4 py-2.5 text-sm tracking-widest uppercase font-sans border-b border-[var(--border)] ${location.pathname.startsWith(`/visualize/${section.id}`)
-                    ? 'text-[var(--text-0)]'
-                    : 'text-[var(--text-muted)] hover:text-[var(--text-1)]'
+                  ? 'text-[var(--text-0)]'
+                  : 'text-[var(--text-muted)] hover:text-[var(--text-1)]'
                   }`}
               >
                 {section.name}
